@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.16)  30 OCT 2017 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.16)  1 NOV 2017 12:26
 entering extended mode
 **./janeausten.tex
 (janeausten.tex
@@ -86,18 +86,18 @@ tim
 (janeausten.aux)
 \openout1 = `janeausten.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 (C:\Users\ronri\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -158,105 +158,105 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 58.
+(Font)              <12> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 58.
+(Font)              <6> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 65.
+(Font)              <7> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 65.
-Package color Info: Redefining color shadecolor on input line 71.
+(Font)              <5> on input line 68.
+Package color Info: Redefining color shadecolor on input line 74.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 73.
-Package color Info: Redefining color shadecolor on input line 82.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 76.
+Package color Info: Redefining color shadecolor on input line 85.
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ##                                                          
             text[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ##                                                          
            <chr>[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ##  1                                                  SENSE
  AND SENSIBILITY[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ##  3                                                       
   by Jane Austen[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ##  5                                                       
           (1811)[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 10                                                       
        CHAPTER 1[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 13  The family of Dashwood had long been settled in Susse
 x.  Their estate[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 14   was large, and their residence was at Norland Park, 
 in the centre of[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 15      their property, where, for many generations, they
  had lived in so[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 16    respectable a manner as to engage the general good 
 opinion of their[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 17  surrounding acquaintance.  The late owner of this est
 ate was a single[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 18   man, who lived to a very advanced age, and who for m
 any years of his[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 19 life, had a constant companion and housekeeper in his 
 sister.  But her[] 
  []
 
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 114--114
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## 20       death, which happened ten years before his own, 
 produced a great[] 
  []
 
 
-Overfull \hbox (6.74693pt too wide) in paragraph at lines 114--114
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 117--117
 []\OT1/cmtt/m/n/10 ## # ... with 1.26e+04 more rows, and 1 more variables: book
  <fctr>[] 
  []
@@ -264,138 +264,141 @@ Overfull \hbox (6.74693pt too wide) in paragraph at lines 114--114
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package color Info: Redefining color shadecolor on input line 124.
+Package color Info: Redefining color shadecolor on input line 127.
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ##                                                          
              text[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ##                                                          
             <chr>[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ##  1                                                   SENS
 E AND SENSIBILITY[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ##  3                                                       
    by Jane Austen[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ##  5                                                       
            (1811)[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 12   The family of Dashwood had long been settled in Suss
 ex.  Their estate[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 13    was large, and their residence was at Norland Park,
  in the centre of[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 14       their property, where, for many generations, the
 y had lived in so[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 15     respectable a manner as to engage the general good
  opinion of their[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 16   surrounding acquaintance.  The late owner of this es
 tate was a single[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 17    man, who lived to a very advanced age, and who for 
 many years of his[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 18  life, had a constant companion and housekeeper in his
  sister.  But her[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 19        death, which happened ten years before his own,
  produced a great[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## 20 alteration in his home; for to supply her loss, he inv
 ited and received[] 
  []
 
 
-Overfull \hbox (11.99689pt too wide) in paragraph at lines 156--156
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 159--159
 []\OT1/cmtt/m/n/10 ## # ... with 1.255e+04 more rows, and 1 more variables: boo
 k <fctr>[] 
  []
 
 [2]
-Package color Info: Redefining color shadecolor on input line 163.
-Package color Info: Redefining color shadecolor on input line 174.
-Package color Info: Redefining color shadecolor on input line 186.
+Package color Info: Redefining color shadecolor on input line 166.
+Package color Info: Redefining color shadecolor on input line 177.
+Package color Info: Redefining color shadecolor on input line 189.
  [3]
-Package color Info: Redefining color shadecolor on input line 210.
-Package color Info: Redefining color shadecolor on input line 235.
- <figure/unnamed-chunk-8-1.pdf, id=22, 505.89pt x 505.89pt>
-File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+Package color Info: Redefining color shadecolor on input line 213.
+Package color Info: Redefining color shadecolor on input line 238.
+ <figure/unnamed-chunk-9-1.pdf, id=22, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-8-1.pdf used on input line 241.
+<use figure/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-9-1.pdf used on input line 244.
 (pdftex.def)             Requested size: 345.0pt x 345.00414pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 241--242
+Overfull \hbox (15.0pt too wide) in paragraph at lines 244--245
 [][] 
  []
 
-(janeausten.bbl [4]) [5 <./figure/unnamed-chunk-8-1.pdf>] (janeausten.aux) ) 
+(janeausten.bbl [4]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+ [5 <./figure/unnamed-chunk-9-1.pdf>]) [6] (janeausten.aux) ) 
 Here is how much of TeX's memory you used:
- 1984 strings out of 493323
- 27511 string characters out of 3139065
- 98813 words of memory out of 3000000
- 5506 multiletter control sequences out of 15000+200000
+ 2002 strings out of 493323
+ 27817 string characters out of 3139065
+ 98997 words of memory out of 3000000
+ 5524 multiletter control sequences out of 15000+200000
  8401 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,25p,320b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on janeausten.pdf (5 pages, 160518 bytes).
+<C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on janeausten.pdf (6 pages, 165402 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

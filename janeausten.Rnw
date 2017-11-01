@@ -1,6 +1,11 @@
 \documentclass{article}
 \usepackage{natbib}
 
+<<warning=FALSE, message=FALSE, echo=FALSE>>=
+packages<-c('dplyr', 'janeaustenr', 'stringr', 'tidytext', 'tm', 'wordcloud')
+knitr::write_bib(packages, file='janeaustenpackages.bib')
+@
+
 \begin{document}
 
 \title{Sense \& Sensibility Wordcloud}
@@ -86,7 +91,7 @@ wordcloud(snsWordFreq$word, snsWordFreq$count, min.freq=25)
 
 
 \bibliographystyle{apa}
-\bibliography{janeausten}
+\bibliography{janeausten,janeaustenpackages}
 \nocite{*}
 
 
