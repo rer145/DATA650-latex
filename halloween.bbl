@@ -1,0 +1,20 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Gutenberg}{2017}]{Gutenberg}
+Gutenberg, P. (2017).
+\newblock The strange case of dr. jekyll and mr. hyde.
+\newblock \url{https://www.gutenberg.org/ebooks/42}.
+\newblock Accessed: 2017-10-31.
+
+\bibitem[\protect\astroncite{Silge and Robinson}{2017}]{Silge}
+Silge, J. and Robinson, D. (2017).
+\newblock {\em Text Mining with R: A Tidy Approach}.
+\newblock O'Reilly Media.
+
+\bibitem[\protect\astroncite{Wickham and Grolemund}{2017}]{Wickham}
+Wickham, H. and Grolemund, G. (2017).
+\newblock {\em R for Data Science: Import, Tidy, Transform, Visualize, and
+  Model Data}.
+\newblock O'Reilly Media.
+
+\end{thebibliography}
