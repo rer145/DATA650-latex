@@ -50,6 +50,7 @@
 
 \usepackage{alltt}
 \usepackage{natbib}
+\usepackage{url}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
@@ -62,9 +63,9 @@ This article contains the code and explanation of how to create a wordcloud usin
 \end{abstract}
 
 \section{Introduction}
-A wordcloud is a type of visualization that shows the frequency of a word within a collection by changing the size of the word. The more frequently a word is used, the larger it shows up in the wordcloud.  In this article, we will be using R and RStudio to create a wordcloud\footnote{What is Captain Blackbeard`s favorite programming language?  ARRRRRR}
+A wordcloud is a type of visualization that shows the frequency of a word within a collection by changing the size of the word. The more frequently a word is used, the larger it shows up in the wordcloud.  In this article, we will be using R and RStudio to create a wordcloud.\footnote{What is Captain Blackbeard`s favorite programming language?  ARRRRRR}
 
-In the spirit of Halloween, we have chosen the novel \textit{The Strange Case of Dr. Jekyll and Mr. Hyde} by Robert Louis Stevenson. It was written in 1886 and is available via Project Gutenberg, who graciously provide the text via their R package gutenbergr.
+In the spirit of Halloween, we have chosen the novel \textit{The Strange Case of Dr. Jekyll and Mr. Hyde} by Robert Louis Stevenson. It was written in 1886 and is available via Project Gutenberg, who graciously provide the text via their R package gutenberg \citep{Gutenberg}.
 
 \section{Obtaining the Text}
 To obtain the text, we must first import our libraries and find the text we want. For the purposes of this article, we have already searched for the text we want, but have included code to search by title.
