@@ -1,4 +1,9 @@
+Must be entered in terminal to add bibliography to end of article
+
 pdflatex janeausten
-bibtex janeausten (x2)
+bibtex janeausten (x2? only if message about .aux file missing)
 pdflatex janeausten
 pdflatex janeausten
+
+
+Need to run these commands only when bibliography file is changed. Can compile in RStudio if no changes to bibliography are present.
