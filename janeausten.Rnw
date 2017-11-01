@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+\title{Sense \& Sensibility Wordcloud}
+\author{Ron Richardson}
+\maketitle
+
+\begin{abstract}
+This article we construct a wordcloud using Jane Austen's book "Sense \& Sensibility", via the R package, janeaustenr.
+\end{abstract}
+
+\section{Introduction}
+\textit{Sense \& Sensibility} is a novel was written in 1811 by Jane Austen\footnote{The novel was published anonymously.}. This article will show how to construct a wordcloud with the most commonly used words in the book.
+
+\section{The Jane Austen Package}
+There is a relatively new package for R called janeaustenr. This package contains all the novels written by Jane Austen \citep{Silge}. First, we need to install this package and load it in with the library command. Then, by calling the following function and store the result into a dataframe.
+
+<<warning=FALSE>>=
+library(janeaustenr)
+sns<-austen_books()
+@
+
+\noindent This dataframe has two columns, one for each line in the novel, and another with the title of novel the line of text is from. Let's first filter using dplyr so we have only just the lines from \textit{Sense \& Sensibility}
+
+<<warning=FALSE, message=FALSE>>=
+library(dplyr)
+sns<-sns%>%
+  filter(book == 'Sense & Sensibility')
+print(sns, n=20)
+@
+
+\noindent Now we are ready for some data cleaning.
+
+\section{Data Cleaning}
+We would like to get the records that only contain the name and number of the chapter. To do this, we find any records that start with `Chapter`. We can use dplyr again, along with the R package called stringr.
+
+<<warning=FALSE, message=FALSE>>=
+library(stringr)
+sns<-sns%>%
+  filter(!str_detect(sns$text, "^CHAPTER"))
+print(sns, n=20)
+@
+
+\noindent We also want to remove the introduction text, as that is not relevant. We can find the positions of this by using the head() function to see what the line indexes are. Doing this, we see that the header ends at record 11, so we can redefine it to start at 12.
+
+<<warning=FALSE, message=FALSE>>=
+sns<-sns[12:12562,]
+@
+
+\section{The Wordcloud}
+First off, we want break apart each line into indivual words, by using a tidytext function to un-nest tokens()
+
+<<warning=FALSE, message=FALSE>>=
+library(tidytext)
+snsWords<-sns%>%
+  unnest_tokens(word, text)
+@
+
+\noindent Now we want to remove any unimportant words, called stop words. These words include `the`, `and`, `a`, and several others. 
+
+<<warning=FALSE, message=FALSE>>=
+snsWords<-snsWords%>%
+  filter(!(word %in% stop_words$word))
+
+head(snsWords)
+@
+
+\noindent The last step before building our wordcloud is to get a count of each word using dplyr.
+
+<<warning=FALSE, message=FALSE>>=
+snsWordFreq<-snsWords%>%
+  group_by(word)%>%
+  summarize(count=n())
+
+head(snsWordFreq)
+@
+
+\noindent Finally, we can add the words and frequencies to the wordcloud function. Since there are so many unique words in the novel, we want to only include the words that occur more than 25 times.
+
+<<warning=FALSE, message=FALSE>>=
+library(wordcloud)
+wordcloud(snsWordFreq$word, snsWordFreq$count, min.freq=25)
+@
+
+
+\bibliographystyle{apa}
+\bibliography{janeausten}
+\nocite{*}
+
+
+\end{document}

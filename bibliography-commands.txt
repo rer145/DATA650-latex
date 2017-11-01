@@ -1,0 +1,4 @@
+pdflatex janeausten
+bibtex janeausten (x2)
+pdflatex janeausten
+pdflatex janeausten

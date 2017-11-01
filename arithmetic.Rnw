@@ -1,0 +1,87 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{Arithmetic}
+\author{Ron Richardson}
+\maketitle
+
+\begin{abstract}
+In this article we give some examples of basic arithmetic in R.
+\end{abstract}
+
+\section{Addition}
+Addition in R is done with the + sign\footnote{This is detailed expertly in Ousley's fine book on addition.}. First, let's store some values into variables.
+
+<<>>=
+x<-4
+y<-3
+x+y
+@
+
+\section{Subtraction}
+For subtraction, we use the - sign. Here is an example:
+
+<<>>=
+x<-8
+y<-3
+x-y
+@
+
+\section{Multiplication}
+For multiplication, we use the * sign.
+
+<<>>=
+x<-2
+y<-6
+x*y
+@
+
+\section{Division}
+Finally, we divide using the forward slash.
+<<>>=
+x<-7
+y<-4
+x/y
+@
+
+\section{Plotting}
+Nothing to do with arithmetic, but let's do it.
+
+First let's store some values.
+<<>>=
+x<-seq(1,10,.1)
+@
+
+\noindent This generates a sequence of values from 1 to 10 going by intevals of .1:
+
+<<echo=FALSE>>=
+x
+@
+
+Now let's do this:
+<<>>=
+y<-x^2
+@
+
+THis squares all of the \textit{x}-values.
+<<echo=FALSE>>=
+y
+@
+
+Now we make a dataframe:
+<<>>=
+df<-data.frame(x,y)
+df
+@
+
+FInally, plot it with ggplot:
+<<warning=FALSE>>=
+library(ggplot2)
+ggplot()+
+  geom_point(data=df,aes(x=x,y=y))
+@
+
+
+
+\end{document}
