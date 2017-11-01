@@ -2,6 +2,10 @@
 \usepackage{natbib}
 \usepackage{url}
 
+<<warning=FALSE, message=FALSE, echo=FALSE>>=
+packages<-c('dplyr', 'janeaustenr', 'stringr', 'tidytext', 'tm', 'wordcloud')
+knitr::write_bib(packages, file='halloweenpackages.bib')
+@
 
 \begin{document}
 
@@ -88,7 +92,7 @@ Just from the wordcloud, we can surmise that `utterson` is a person`s name and `
 We can see now that generating a wordcloud is quite easy and can be a useful visualization to get a quick sense of what a collection of text is about.
 
 \bibliographystyle{apa}
-\bibliography{halloween}
+\bibliography{halloween,halloweenpackages}
 \nocite{*}
 
 \end{document}
