@@ -47,9 +47,9 @@
 \begin{frame}[fragile]
   \frametitle{Searching for a Novel}
   <<warning=FALSE, message=FALSE>>=
-      df<-gutenberg_works(str_detect(title, 'Dracula'))
-      df$gutenberg_id
-      df$title
+  df<-gutenberg_works(str_detect(title, 'Dracula'))
+  df$gutenberg_id
+  df$title
   @
 \end{frame}
 
