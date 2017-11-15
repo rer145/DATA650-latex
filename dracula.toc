@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Install and Load Libraries}{3}{0}{1}
+\beamer@sectionintoc {2}{Searching for a Novel}{8}{0}{2}
+\beamer@sectionintoc {3}{Download Dracula from Project Gutenberg}{9}{0}{3}
+\beamer@sectionintoc {4}{Unpack the Words}{10}{0}{4}
+\beamer@sectionintoc {5}{The Bing Lexicon}{11}{0}{5}
+\beamer@sectionintoc {6}{Joining Dracula with Bing}{12}{0}{6}

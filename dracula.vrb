@@ -1,0 +1,13 @@
+\frametitle{Joining Dracula with Bing}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{words}\hlkwb{<-}\hlkwd{inner_join}\hlstd{(words, bing)}
+\hlstd{words}\hlopt{$}\hlstd{gutenberg_id}\hlkwb{<-}\hlkwa{NULL}
+\hlkwd{colnames}\hlstd{(words)}
+\end{alltt}
+\begin{verbatim}
+## [1] "word"      "sentiment"
+\end{verbatim}
+\end{kframe}
+\end{knitrout}

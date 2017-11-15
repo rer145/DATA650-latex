@@ -1,0 +1,99 @@
+\documentclass{beamer}
+
+\begin{document}
+
+\title{Positive and Negative Words in Dracula}
+\author{Ron Richardson}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+    \tableofcontents
+\end{frame}
+
+
+\section{Install and Load Libraries}
+\begin{frame}[fragile]
+  \frametitle{Install and Load Libraries}
+    \begin{itemize}
+      \item<1->
+        <<warning=FALSE, message=FALSE>>=
+        library(dplyr)
+        @
+      \item<2->
+      <<warning=FALSE, message=FALSE>>=
+      library(gutenbergr)
+      @
+      \item<3->
+      <<warning=FALSE, message=FALSE>>=
+      library(tidytext)
+      @
+      \item<4->
+      <<warning=FALSE, message=FALSE>>=
+      library(stringr)
+      @
+      \item<5->
+      <<warning=FALSE, message=FALSE>>=
+      library(ggplot2)
+      @
+    \end{itemize}
+\end{frame}
+
+\section{Searching for a Novel}
+\begin{frame}[fragile]
+  \frametitle{Searching for a Novel}
+  <<warning=FALSE, message=FALSE>>=
+      df<-gutenberg_works(str_detect(title, 'Dracula'))
+      df$gutenberg_id
+      df$title
+  @
+\end{frame}
+
+\section{Download Dracula from Project Gutenberg}
+\begin{frame}[fragile]
+  \frametitle{Download Dracula from Project Gutenberg}
+  <<warning=FALSE, message=FALSE>>=
+  dracula<-gutenberg_download(345)
+  colnames(dracula)
+  substr(dracula$text[500], 1, 21)
+  @
+\end{frame}
+
+\section{Unpack the Words}
+\begin{frame}[fragile]
+  \frametitle{Unpack the Words}
+  <<warning=FALSE, message=FALSE>>=
+  words<-dracula%>%
+    unnest_tokens(word, text)
+  colnames(words)
+  words[500,]
+  @ 
+\end{frame}
+
+\section{The Bing Lexicon}
+\begin{frame}[fragile]
+  \frametitle{The Bing Lexicon}
+  <<warning=FALSE, message=FALSE>>=
+  bing<-get_sentiments('bing')
+  colnames(bing)
+  bing[500,]
+  @ 
+\end{frame}
+
+\section{Joining Dracula with Bing}
+\begin{frame}[fragile]
+  \frametitle{Joining Dracula with Bing}
+  <<warning=FALSE, message=FALSE>>=
+  words<-inner_join(words, bing)
+  words$gutenberg_id<-NULL
+  colnames(words)
+  @ 
+\end{frame}
+
+
+
+\end{document}
