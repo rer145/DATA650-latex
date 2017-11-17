@@ -21,9 +21,9 @@
   \frametitle{Install and Load Libraries}
     \begin{itemize}
       \item<1->
-        <<warning=FALSE, message=FALSE>>=
-        library(dplyr)
-        @
+      <<warning=FALSE, message=FALSE>>=
+      library(dplyr)
+      @
       \item<2->
       <<warning=FALSE, message=FALSE>>=
       library(gutenbergr)
@@ -94,6 +94,63 @@
   @ 
 \end{frame}
 
+\section{Top 10 Positive Words}
+\begin{frame}[fragile]
+  \frametitle{Top 10 Positive Words}
+  <<warning=FALSE, message=FALSE>>=
+  words_pos<-words%>%
+    filter(sentiment=='positive')%>%
+    group_by(word)%>%
+    summarize(count=n(), sentiment=first(sentiment))%>%
+    arrange(count)%>%
+    top_n(10, wt=count)
+  @
+  \framebreak
+  <<>>=
+  words_pos
+  @
+\end{frame}
 
+\section{Top 10 Negative Words}
+\begin{frame}[fragile]
+  \frametitle{Top 10 Negative Words}
+  <<echo=FALSE>>=
+  words_neg<-words%>%
+    filter(sentiment=='negative')%>%
+    group_by(word)%>%
+    summarize(count=n(), sentiment=first(sentiment))%>%
+    arrange(count)%>%
+    top_n(10, wt=count)
+  
+  words_neg
+  @
+\end{frame}
+
+\section{The Comparison Barplot}
+\begin{frame}[fragile]
+  \frametitle{The Comparison Barplot}
+  <<warning=FALSE, message=FALSE>>=
+  words_pos$word<-factor(words_pos$word, levels=words_pos$word)
+  words_neg$word<-factor(words_neg$word, levels=words_neg$word)
+  
+  words<-rbind(words_pos, words_neg)
+  @
+  \framebreak
+  <<warning=FALSE, message=FALSE>>=
+  plot<-ggplot()+
+    geom_bar(data=words, aes(x=word, y=count, fill=sentiment, color=sentiment), stat="identity")+
+    xlab("Word")+
+    ylab("Count")+
+    coord_flip()+
+    ggtitle("Top 10 Positive/Negative Words in Dracula")+
+    facet_wrap(~sentiment, scales='free_y')+  # which column(s) distinguishes the groups
+    scale_fill_manual(values=c('#000000', '#ea6205'))+
+    scale_color_manual(values=c('#ea6205', '#000000'))
+  @
+  \framebreak
+  <<echo=FALSE, fig.height=4>>=
+  plot
+  @
+\end{frame}
 
 \end{document}

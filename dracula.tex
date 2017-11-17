@@ -225,6 +225,105 @@
 \end{knitrout}
 \end{frame}
 
+\section{Top 10 Positive Words}
+\begin{frame}[fragile]
+  \frametitle{Top 10 Positive Words}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{words_pos}\hlkwb{<-}\hlstd{words}\hlopt{%>%}
+  \hlkwd{filter}\hlstd{(sentiment}\hlopt{==}\hlstr{'positive'}\hlstd{)}\hlopt{%>%}
+  \hlkwd{group_by}\hlstd{(word)}\hlopt{%>%}
+  \hlkwd{summarize}\hlstd{(}\hlkwc{count}\hlstd{=}\hlkwd{n}\hlstd{(),} \hlkwc{sentiment}\hlstd{=}\hlkwd{first}\hlstd{(sentiment))}\hlopt{%>%}
+  \hlkwd{arrange}\hlstd{(count)}\hlopt{%>%}
+  \hlkwd{top_n}\hlstd{(}\hlnum{10}\hlstd{,} \hlkwc{wt}\hlstd{=count)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+  \framebreak
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{words_pos}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 10 x 3
+##      word count sentiment
+##     <chr> <int>     <chr>
+##  1  sweet    66  positive
+##  2  ready    71  positive
+##  3 better    77  positive
+##  4   love    84  positive
+##  5  right    99  positive
+##  6   work   146  positive
+##  7  great   183  positive
+##  8   well   245  positive
+##  9   good   258  positive
+## 10   like   292  positive
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\end{frame}
 
+\section{Top 10 Negative Words}
+\begin{frame}[fragile]
+  \frametitle{Top 10 Negative Words}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+## # A tibble: 10 x 3
+##        word count sentiment
+##       <chr> <int>     <chr>
+##  1  trouble    53  negative
+##  2     fell    59  negative
+##  3     miss    60  negative
+##  4     dark    77  negative
+##  5  strange    90  negative
+##  6    death    94  negative
+##  7 terrible   100  negative
+##  8     dead   109  negative
+##  9     fear   137  negative
+## 10     poor   193  negative
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\end{frame}
+
+\section{The Comparison Barplot}
+\begin{frame}[fragile]
+  \frametitle{The Comparison Barplot}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{words_pos}\hlopt{$}\hlstd{word}\hlkwb{<-}\hlkwd{factor}\hlstd{(words_pos}\hlopt{$}\hlstd{word,} \hlkwc{levels}\hlstd{=words_pos}\hlopt{$}\hlstd{word)}
+\hlstd{words_neg}\hlopt{$}\hlstd{word}\hlkwb{<-}\hlkwd{factor}\hlstd{(words_neg}\hlopt{$}\hlstd{word,} \hlkwc{levels}\hlstd{=words_neg}\hlopt{$}\hlstd{word)}
+
+\hlstd{words}\hlkwb{<-}\hlkwd{rbind}\hlstd{(words_pos, words_neg)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+  \framebreak
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{plot}\hlkwb{<-}\hlkwd{ggplot}\hlstd{()}\hlopt{+}
+  \hlkwd{geom_bar}\hlstd{(}\hlkwc{data}\hlstd{=words,} \hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=word,} \hlkwc{y}\hlstd{=count,} \hlkwc{fill}\hlstd{=sentiment,} \hlkwc{color}\hlstd{=sentiment),} \hlkwc{stat}\hlstd{=}\hlstr{"identity"}\hlstd{)}\hlopt{+}
+  \hlkwd{xlab}\hlstd{(}\hlstr{"Word"}\hlstd{)}\hlopt{+}
+  \hlkwd{ylab}\hlstd{(}\hlstr{"Count"}\hlstd{)}\hlopt{+}
+  \hlkwd{coord_flip}\hlstd{()}\hlopt{+}
+  \hlkwd{ggtitle}\hlstd{(}\hlstr{"Top 10 Positive/Negative Words in Dracula"}\hlstd{)}\hlopt{+}
+  \hlkwd{facet_wrap}\hlstd{(}\hlopt{~}\hlstd{sentiment,} \hlkwc{scales}\hlstd{=}\hlstr{'free_y'}\hlstd{)}\hlopt{+}  \hlcom{# which column(s) distinguishes the groups}
+  \hlkwd{scale_fill_manual}\hlstd{(}\hlkwc{values}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{'#000000'}\hlstd{,} \hlstr{'#ea6205'}\hlstd{))}\hlopt{+}
+  \hlkwd{scale_color_manual}\hlstd{(}\hlkwc{values}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{'#ea6205'}\hlstd{,} \hlstr{'#000000'}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+  \framebreak
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-16-1} 
+
+\end{knitrout}
+\end{frame}
 
 \end{document}
