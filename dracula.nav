@@ -37,18 +37,31 @@
 \headcommand {\sectionentry {7}{Top 10 Positive Words}{13}{Top 10 Positive Words}{0}}
 \headcommand {\slideentry {7}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@sectionpages {13}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\sectionentry {8}{Top 10 Negative Words}{14}{Top 10 Negative Words}{0}}
-\headcommand {\slideentry {8}{0}{1}{14/14}{}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@sectionpages {14}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\sectionentry {9}{The Comparison Barplot}{15}{The Comparison Barplot}{0}}
-\headcommand {\slideentry {9}{0}{1}{15/15}{}{0}}
+\headcommand {\slideentry {7}{0}{1}{13/14}{}{0}}
+\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\beamer@sectionpages {13}{14}}
+\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\sectionentry {8}{Top 10 Negative Words}{15}{Top 10 Negative Words}{0}}
+\headcommand {\slideentry {8}{0}{1}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@partpages {1}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\beamer@sectionpages {15}{15}}
-\headcommand {\beamer@documentpages {15}}
-\headcommand {\def \inserttotalframenumber {11}}
+\headcommand {\slideentry {8}{0}{1}{15/16}{}{0}}
+\headcommand {\beamer@framepages {15}{16}}
+\headcommand {\beamer@sectionpages {15}{16}}
+\headcommand {\beamer@subsectionpages {15}{16}}
+\headcommand {\sectionentry {9}{Joining Positive and Negative Words}{17}{Joining Positive and Negative Words}{0}}
+\headcommand {\slideentry {9}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {9}{0}{1}{17/18}{}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\beamer@sectionpages {17}{18}}
+\headcommand {\beamer@subsectionpages {17}{18}}
+\headcommand {\sectionentry {10}{The Comparison Barplot}{19}{The Comparison Barplot}{0}}
+\headcommand {\slideentry {10}{0}{1}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {10}{0}{1}{19/20}{}{0}}
+\headcommand {\beamer@framepages {19}{20}}
+\headcommand {\beamer@partpages {1}{20}}
+\headcommand {\beamer@subsectionpages {19}{20}}
+\headcommand {\beamer@sectionpages {19}{20}}
+\headcommand {\beamer@documentpages {20}}
+\headcommand {\def \inserttotalframenumber {16}}

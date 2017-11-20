@@ -95,7 +95,7 @@
 \end{frame}
 
 \section{Top 10 Positive Words}
-\begin{frame}[fragile]
+\begin{frame}[allowframebreaks, fragile]
   \frametitle{Top 10 Positive Words}
   <<warning=FALSE, message=FALSE>>=
   words_pos<-words%>%
@@ -112,23 +112,25 @@
 \end{frame}
 
 \section{Top 10 Negative Words}
-\begin{frame}[fragile]
+\begin{frame}[allowframebreaks, fragile]
   \frametitle{Top 10 Negative Words}
-  <<echo=FALSE>>=
+  <<warning=FALSE, message=FALSE>>=
   words_neg<-words%>%
     filter(sentiment=='negative')%>%
     group_by(word)%>%
     summarize(count=n(), sentiment=first(sentiment))%>%
     arrange(count)%>%
     top_n(10, wt=count)
-  
+  @
+  \framebreak
+  <<warning=FALSE, message=FALSE>>=
   words_neg
   @
 \end{frame}
 
-\section{The Comparison Barplot}
-\begin{frame}[fragile]
-  \frametitle{The Comparison Barplot}
+\section{Joining Positive and Negative Words}
+\begin{frame}[allowframebreaks, fragile]
+  \frametitle{Joining Positive and Negative Words}
   <<warning=FALSE, message=FALSE>>=
   words_pos$word<-factor(words_pos$word, levels=words_pos$word)
   words_neg$word<-factor(words_neg$word, levels=words_neg$word)
@@ -136,6 +138,14 @@
   words<-rbind(words_pos, words_neg)
   @
   \framebreak
+  <<warning=FALSE, message=FALSE>>=
+  words
+  @
+\end{frame}
+
+\section{The Comparison Barplot}
+\begin{frame}[allowframebreaks, fragile]
+  \frametitle{The Comparison Barplot}
   <<warning=FALSE, message=FALSE>>=
   plot<-ggplot()+
     geom_bar(data=words, aes(x=word, y=count, fill=sentiment, color=sentiment), stat="identity")+

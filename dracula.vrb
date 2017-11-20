@@ -2,17 +2,6 @@
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{words_pos}\hlopt{$}\hlstd{word}\hlkwb{<-}\hlkwd{factor}\hlstd{(words_pos}\hlopt{$}\hlstd{word,} \hlkwc{levels}\hlstd{=words_pos}\hlopt{$}\hlstd{word)}
-\hlstd{words_neg}\hlopt{$}\hlstd{word}\hlkwb{<-}\hlkwd{factor}\hlstd{(words_neg}\hlopt{$}\hlstd{word,} \hlkwc{levels}\hlstd{=words_neg}\hlopt{$}\hlstd{word)}
-
-\hlstd{words}\hlkwb{<-}\hlkwd{rbind}\hlstd{(words_pos, words_neg)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-  \framebreak
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
 \hlstd{plot}\hlkwb{<-}\hlkwd{ggplot}\hlstd{()}\hlopt{+}
   \hlkwd{geom_bar}\hlstd{(}\hlkwc{data}\hlstd{=words,} \hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=word,} \hlkwc{y}\hlstd{=count,} \hlkwc{fill}\hlstd{=sentiment,} \hlkwc{color}\hlstd{=sentiment),} \hlkwc{stat}\hlstd{=}\hlstr{"identity"}\hlstd{)}\hlopt{+}
   \hlkwd{xlab}\hlstd{(}\hlstr{"Word"}\hlstd{)}\hlopt{+}
@@ -28,6 +17,6 @@
   \framebreak
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-16-1}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-18-1}
 
 \end{knitrout}
