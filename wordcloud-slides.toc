@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Install and Load Libraries}{3}{0}{1}
+\beamer@sectionintoc {2}{Getting Text to Parse}{8}{0}{2}
+\beamer@sectionintoc {3}{Filter out Chapter Titles}{9}{0}{3}
+\beamer@sectionintoc {4}{Unpack the Words}{10}{0}{4}
+\beamer@sectionintoc {5}{Filtering out Stop Words}{11}{0}{5}
+\beamer@sectionintoc {6}{Grouping and Summarizing the Data}{12}{0}{6}
+\beamer@sectionintoc {7}{Creating the Wordcloud}{14}{0}{7}

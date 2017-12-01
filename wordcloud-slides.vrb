@@ -1,0 +1,14 @@
+\frametitle{Creating the Wordcloud}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{wordcloud}\hlstd{(wordFreq}\hlopt{$}\hlstd{word, wordFreq}\hlopt{$}\hlstd{count,} \hlkwc{max.words}\hlstd{=}\hlnum{100}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+  \framebreak
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-13-1}
+
+\end{knitrout}

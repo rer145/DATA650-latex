@@ -1,0 +1,109 @@
+\documentclass{beamer}
+
+\begin{document}
+
+\title{Creating a Wordcloud}
+\author{Ron Richardson}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+    \tableofcontents
+\end{frame}
+
+
+\section{Install and Load Libraries}
+\begin{frame}[fragile]
+  \frametitle{Install and Load Libraries}
+    \begin{itemize}
+      \item<1->
+      <<warning=FALSE, message=FALSE>>=
+      library(dplyr)
+      @
+      \item<2->
+      <<warning=FALSE, message=FALSE>>=
+      library(janeaustenr)
+      @
+      \item<3->
+      <<warning=FALSE, message=FALSE>>=
+      library(tidytext)
+      @
+      \item<4->
+      <<warning=FALSE, message=FALSE>>=
+      library(stringr)
+      @
+      \item<5->
+      <<warning=FALSE, message=FALSE>>=
+      library(wordcloud)
+      @
+    \end{itemize}
+\end{frame}
+
+\section{Getting Text to Parse}
+\begin{frame}[fragile]
+  \frametitle{Getting Text to Parse}
+  <<warning=FALSE, message=FALSE>>=
+  sns<-austen_books()
+  sns<-sns%>%
+    filter(book == 'Sense & Sensibility')
+  @
+\end{frame}
+
+\section{Filter out Chapter Titles}
+\begin{frame}[fragile]
+  \frametitle{Filter out Chapter Titles}
+  <<warning=FALSE, message=FALSE>>=
+  sns<-sns%>%
+    filter(!str_detect(sns$text, "^CHAPTER"))
+  @
+\end{frame}
+
+\section{Unpack the Words}
+\begin{frame}[fragile]
+  \frametitle{Unpack the Words}
+  <<warning=FALSE, message=FALSE>>=
+  words<-sns%>%
+    unnest_tokens(word, text)
+  @ 
+\end{frame}
+
+\section{Filtering out Stop Words}
+\begin{frame}[fragile]
+  \frametitle{Filtering out Stop Words}
+  <<warning=FALSE, message=FALSE>>=
+  words<-words%>%
+    filter(!(word %in% stop_words$word))
+  @ 
+\end{frame}
+
+\section{Grouping and Summarizing the Data}
+\begin{frame}[allowframebreaks, fragile]
+  \frametitle{Grouping and Summarizing the Data}
+  <<warning=FALSE, message=FALSE>>=
+  wordFreq<-words%>%
+    group_by(word)%>%
+    summarize(count=n())
+  @ 
+  \framebreak
+  <<>>=
+  wordFreq
+  @
+\end{frame}
+
+\section{Creating the Wordcloud}
+\begin{frame}[allowframebreaks, fragile]
+  \frametitle{Creating the Wordcloud}
+  <<eval=FALSE, warning=FALSE, message=FALSE>>=
+  wordcloud(wordFreq$word, wordFreq$count, max.words=100)
+  @
+  \framebreak
+  <<echo=FALSE, warning=FALSE, message=FALSE>>=
+  wordcloud(wordFreq$word, wordFreq$count, max.words=100)
+  @
+\end{frame}
+
+\end{document}
